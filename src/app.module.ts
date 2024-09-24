@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Postagem } from './postagem/postagem.entity/postagem.entity';
 import { Membro } from './membro/membro.entity/membro.entity';
 /*
-
+Banco de Dados
 
 
 
