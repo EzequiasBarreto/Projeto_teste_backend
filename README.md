@@ -1,63 +1,73 @@
+## Descrição
+Este projeto é uma API back-end criada com NestJS e Express, usando o TypeORM para a integração com um banco de dados SQL (MySQL). O sistema inclui um CRUD (Create, Read, Update, Delete) para gerenciar postagens e membros fictícios.
 
 
-## Description
+## Tecnologias Utilizadas
+Node.js: Ambiente de execução JavaScript.
+NestJS: Framework para construir aplicações Node.js escaláveis e eficientes.
+TypeORM: ORM (Object-Relational Mapping) para interagir com o banco de dados.
+MySQL: Sistema de gerenciamento de banco de dados relacional.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Configuração do Ambiente
+Para configurar o ambiente, você precisará instalar as dependências necessárias. Abra
+terminal e execute o comando abaixo:
 
-## Project setup
+  1 - Fiz uma verificação se o Node.JS realmente estava instalado corretamente:
+      node -v
+      npm -v
 
-```bash
-$ npm install
-```
+    Configuração do projeto
+    npm install -g @nestjs/cli
 
-## Compile and run the project
+  2 - Criação do Novo Projeto NestJS 
+      nest new meu-projeto-backend
 
-```bash
-# development
-$ npm run start
+  3 - Instalação do Express, pois sera usado como uma camada HTTP subjacente
+      npm install @nestjs/platform-express
 
-# watch mode
-$ npm run start:dev
+  4 - Para fazer a conexão NestJS com o banco. foi instalado a dependencia TypeORM pelo Prompt de Comando.
+      Isso instala o pacote mysql2, que é o driver MySQL necessário para o TypeORM se conectar ao banco MySQL.
+      npm install @nestjs/typeorm typeorm mysql2
 
-# production mode
-$ npm run start:prod
-```
+  5 - Realizado a configuração do Banco de Dados:
+      Fora criado um banco de dados MySQL chamado "projeto_teste" com dados fictício e que foi assim configurado as credencias no arquivo app.madule.ts 
 
-## Run tests
+## Compilar e executar o projeto
+Usando o Terminal dentro do VsCode, inserir esse comandos 
 
-```bash
-# unit tests
-$ npm run test
+  # desenvolvimento
+  Use o comando abaixo para iniciar o projeto NestJS:
+  npm run start:dev
 
-# e2e tests
-$ npm run test:e2e
+  # acessar a API
+  http://localhost:3000
 
-# test coverage
-$ npm run test:cov
-```
 
-## Resources
 
-Check out a few resources that may come in handy when working with NestJS:
+## Executar testes
+# testes unitários
+npm run test
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+# testes e2e
+npm run test:e2e
 
-## Support
+# cobertura de testes
+npm run test:cov
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-## Stay in touch
+## Recursos
+Confira alguns recursos que podem ser úteis ao trabalhar com NestJS:
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+Visite a Documentação do NestJS
+Para perguntas e suporte, visite nosso canal no Discord
+Para se aprofundar e obter mais experiência prática, confira nossos cursos oficiais em vídeo
+Visualize o gráfico da sua aplicação e interaja com a aplicação NestJS em tempo real usando as Ferramentas de Desenvolvimento do NestJS
+Precisa de ajuda com seu projeto (meio período a período integral)? Confira nosso suporte corporativo oficial
+Para ficar por dentro e receber atualizações, siga-nos no XLinkedIn
+Está procurando um emprego ou tem uma vaga para oferecer? Confira nosso Quadro de Vagas oficial
+Suporte
+Nest é um projeto open source licenciado sob a MIT. Ele pode crescer graças aos patrocinadores e ao apoio dos incríveis colaboradores. Se você gostaria de se juntar a eles, por favor, leia mais aqui
 
-## License
+# Licença
+Nest é licenciado sob a MIT
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
