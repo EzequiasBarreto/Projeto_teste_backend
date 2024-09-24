@@ -12,23 +12,23 @@ MySQL: Sistema de gerenciamento de banco de dados relacional.
 Para configurar o ambiente, você precisará instalar as dependências necessárias. Abra
 terminal e execute o comando abaixo:
 
-  1 - Fiz uma verificação se o Node.JS realmente estava instalado corretamente:
+    Fiz uma verificação se o Node.JS realmente estava instalado corretamente:
       node -v
       npm -v
 
-    Configuração do projeto
+    Configuração do projeto:
     npm install -g @nestjs/cli
 
-    Criação do Novo Projeto NestJS 
+    Criação do Novo Projeto NestJS:
     nest new meu-projeto-backend
 
     Instalação do Express, pois sera usado como uma camada HTTP subjacente:
     npm install @nestjs/platform-express
 
-    Para fazer a conexão NestJS com o banco. foi instalado a dependencia TypeORM pelo Prompt de Comando. Isso instala o pacote mysql2, que é o driver MySQL necessário para o TypeORM se conectar ao banco MySQL:
-     npm install @nestjs/typeorm typeorm mysql2
+  -  Para fazer a conexão NestJS com o banco. foi instalado a dependencia TypeORM pelo Prompt de Comando. Isso instala o pacote mysql2, que é o driver MySQL necessário para o TypeORM se conectar ao banco MySQL:
+    npm install @nestjs/typeorm typeorm mysql2
 
-  5 - Realizado a configuração do Banco de Dados:
+  -  Realizado a configuração do Banco de Dados:
       Fora criado um banco de dados MySQL chamado "projeto_teste" com dados fictício e que foi assim configurado as credencias no arquivo app.madule.ts 
 
 ## Compilar e executar o projeto
