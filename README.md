@@ -3,10 +3,10 @@ Este projeto é uma API back-end criada com NestJS e Express, usando o TypeORM p
 
 
 ## Tecnologias Utilizadas
-Node.js: Ambiente de execução JavaScript.
-NestJS: Framework para construir aplicações Node.js escaláveis e eficientes.
-TypeORM: ORM (Object-Relational Mapping) para interagir com o banco de dados.
-MySQL: Sistema de gerenciamento de banco de dados relacional.
+- Node.js: Ambiente de execução JavaScript.
+- NestJS: Framework para construir aplicações Node.js escaláveis e eficientes.
+- TypeORM: ORM (Object-Relational Mapping) para interagir com o banco de dados.
+- MySQL: Sistema de gerenciamento de banco de dados relacional.
 
 ## Configuração do Ambiente
 Para configurar o ambiente, você precisará instalar as dependências necessárias. Abra
@@ -44,15 +44,7 @@ Usando o Terminal dentro do VsCode, inserir esse comandos
 
 
 ## Executar testes
-# testes unitários
-npm run test
-
-# testes e2e
-npm run test:e2e
-
-# cobertura de testes
-npm run test:cov
-
+- npm run test
 
 ## Recursos
 
