@@ -26,7 +26,7 @@ terminal e execute o comando abaixo:
       npm install @nestjs/platform-express
 
     Para fazer a conexão NestJS com o banco. foi instalado a dependencia TypeORM pelo Prompt de Comando. Isso instala o pacote mysql2, que é o driver MySQL necessário para o TypeORM se conectar ao banco MySQL:
-  -  npm install @nestjs/typeorm typeorm mysql2
+     -npm install @nestjs/typeorm typeorm mysql2
 
   -  Realizado a configuração do Banco de Dados:
       Fora criado um banco de dados MySQL chamado "projeto_teste" com dados fictício e que foi assim configurado as credencias no arquivo app.madule.ts 
@@ -55,17 +55,8 @@ npm run test:cov
 
 
 ## Recursos
-Confira alguns recursos que podem ser úteis ao trabalhar com NestJS:
 
-Visite a Documentação do NestJS
-Para perguntas e suporte, visite nosso canal no Discord
-Para se aprofundar e obter mais experiência prática, confira nossos cursos oficiais em vídeo
-Visualize o gráfico da sua aplicação e interaja com a aplicação NestJS em tempo real usando as Ferramentas de Desenvolvimento do NestJS
-Precisa de ajuda com seu projeto (meio período a período integral)? Confira nosso suporte corporativo oficial
-Para ficar por dentro e receber atualizações, siga-nos no XLinkedIn
-Está procurando um emprego ou tem uma vaga para oferecer? Confira nosso Quadro de Vagas oficial
-Suporte
-Nest é um projeto open source licenciado sob a MIT. Ele pode crescer graças aos patrocinadores e ao apoio dos incríveis colaboradores. Se você gostaria de se juntar a eles, por favor, leia mais aqui
+Usei o VsCode para realizar a produção, insonnia para melhor visualizar o teste de rotas e o MySQL para criar e formar um banco de dados. 
 
 # Licença
 Nest é licenciado sob a MIT
