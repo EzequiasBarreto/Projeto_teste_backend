@@ -19,15 +19,15 @@ terminal e execute o comando abaixo:
     Configuração do projeto
     npm install -g @nestjs/cli
 
-  2 - Criação do Novo Projeto NestJS 
-      nest new meu-projeto-backend
+    Criação do Novo Projeto NestJS 
+    nest new meu-projeto-backend
 
   3 - Instalação do Express, pois sera usado como uma camada HTTP subjacente
       npm install @nestjs/platform-express
 
   4 - Para fazer a conexão NestJS com o banco. foi instalado a dependencia TypeORM pelo Prompt de Comando.
       Isso instala o pacote mysql2, que é o driver MySQL necessário para o TypeORM se conectar ao banco MySQL.
-      npm install @nestjs/typeorm typeorm mysql2
+     npm install @nestjs/typeorm typeorm mysql2
 
   5 - Realizado a configuração do Banco de Dados:
       Fora criado um banco de dados MySQL chamado "projeto_teste" com dados fictício e que foi assim configurado as credencias no arquivo app.madule.ts 
