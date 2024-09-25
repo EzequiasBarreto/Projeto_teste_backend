@@ -1,5 +1,6 @@
 ## Descrição
-Este projeto é uma API back-end criada com NestJS e Express, usando o TypeORM para a integração com um banco de dados SQL (MySQL). O sistema inclui um CRUD (Create, Read, Update, Delete) para gerenciar postagens e membros fictícios.
+Este projeto é uma API back-end criada com NestJS e Express, usando o TypeORM para a integração com um banco de dados SQL (MySQL). O sistema inclui um CRUD (Create, Read, Update, Delete) para gerenciar postagens e membros fictícios. 
+Duas rotas foram criadas: /membro e /postagens, para acessar informações de dados. Foi aplicado o conceito de repository, service e controllers para estruturar o código.
 
 
 ## Tecnologias Utilizadas
@@ -17,16 +18,9 @@ terminal e execute o comando abaixo:
       npm -v
 
     Configuração do projeto:
-      npm install -g @nestjs/cli
+      npm install -g @nestjs/cli  
 
-    Criação do Novo Projeto NestJS:
-      nest new meu-projeto-backend
-
-    Instalação do Express, pois sera usado como uma camada HTTP subjacente:
-      npm install @nestjs/platform-express
-
-    Para fazer a conexão NestJS com o banco. foi instalado a dependencia TypeORM pelo Prompt de Comando. Isso instala o pacote mysql2, que é o driver MySQL necessário para o TypeORM se conectar ao banco MySQL:
-     -npm install @nestjs/typeorm typeorm mysql2
+      npm i
 
   -  Realizado a configuração do Banco de Dados:
       Fora criado um banco de dados MySQL chamado "projeto_teste" com dados fictício e que foi assim configurado as credencias no arquivo app.madule.ts 

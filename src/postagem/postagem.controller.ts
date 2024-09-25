@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Put, Delete, Body, Param } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Put,
+  Delete,
+  Body,
+  Param,
+} from '@nestjs/common';
 import { PostagemService } from './postagem.service';
 import { Postagem } from './postagem.entity/postagem.entity';
 
@@ -46,7 +54,10 @@ export class PostagemController {
    * @returns {Promise<Postagem>} A postagem atualizada.
    */
   @Put(':id') // Rota para atualização de uma postagem já existente
-  update(@Param('id') id: string, @Body() postagem: Postagem): Promise<Postagem> {
+  update(
+    @Param('id') id: string,
+    @Body() postagem: Postagem,
+  ): Promise<Postagem> {
     return this.postagemService.update(+id, postagem);
   }
 
