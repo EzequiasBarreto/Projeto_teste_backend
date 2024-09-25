@@ -18,7 +18,7 @@ Configurações de Bando de Dados.
       host: 'localhost',
       port: 3306,
       username: 'root',
-      password: '110464',
+      password: '',
       database: 'projeto_teste',
       entities: [Postagem, Membro],
       synchronize: true,

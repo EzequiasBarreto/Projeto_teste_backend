@@ -38,7 +38,7 @@ CREATE TABLE `membro` (
 
 LOCK TABLES `membro` WRITE;
 /*!40000 ALTER TABLE `membro` DISABLE KEYS */;
-INSERT INTO `membro` VALUES (1,'','');
+INSERT INTO `membro` VALUES (1,'teste','teste@gmail.com');
 /*!40000 ALTER TABLE `membro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +64,7 @@ CREATE TABLE `postagem` (
 
 LOCK TABLES `postagem` WRITE;
 /*!40000 ALTER TABLE `postagem` DISABLE KEYS */;
-INSERT INTO `postagem` VALUES (1,'','','');
+INSERT INTO `postagem` VALUES (1,'Primeira Postagem','Realizado a primeira inserção','Teste');
 /*!40000 ALTER TABLE `postagem` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
